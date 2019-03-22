@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Crayner\\Doctrine\\": "/"
+            "Crayner\\Doctrine\\": "/src/"
         },
         "exclude-from-classmap": [
             "/tests/"
