@@ -64,3 +64,5 @@ return [
     Crayner\Doctrine\CraynerDoctrineBundle::class => ['all' => true],
 ];
 ```
+
+Licence: [MIT](LICENCE.md)
