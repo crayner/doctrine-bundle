@@ -1,5 +1,5 @@
 services:
-    Crayner\Doctrine\TablePrefixSubscriber:
+    Crayner\Doctrine\Listener\TablePrefixSubscriber:
         tags:
             - { name: doctrine.event_subscriber }
 
