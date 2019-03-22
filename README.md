@@ -1,5 +1,11 @@
 # Doctrine Bundle Project
 ###Doctrine Bundle Project - Symfony 4+
+
+___Version 0.0.01___
+
+This project has not yet implemented a flex recipe.
+
+###Usage
 This project adds a prefix to all tables names within a connection.  In your __doctrine.yaml__ definition, add the prefix under the options of the connection.
 
 ```
