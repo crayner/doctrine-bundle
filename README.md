@@ -43,18 +43,19 @@ Each connection will then add the prefix (of maximum 7 characters) to the front 
 ####Applications that use Symfony Flex
 Open a command console, enter your project directory and execute:
 
-```$ composer require Crayner/Doctrine```
+```$ composer require crayner/doctrine-bundle```
+
 ####Applications that don't use Symfony Flex
 Step 1: Download the Bundle
     Open a command console, enter your project directory and execute the following command to download the latest stable version of this bundle:
 
-```$ composer require crayner/Doctrine```
+```$ composer require crayner/doctrine-bundle```
 
 This command requires you to have Composer installed globally, as explained in the installation chapter of the Composer documentation.
 
 Step 2: Enable the Bundle
     Then, enable the bundle by adding it to the list of registered bundles in the config/Bundles.php file of your project:
-
+```
 <?php
 
 return [
@@ -62,3 +63,4 @@ return [
     //
     Crayner\Doctrine\CraynerDoctrineBundle::class => ['all' => true],
 ];
+```

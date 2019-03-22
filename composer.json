@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": "^7.1|^7.2",
+        "php": "^7.2",
         "symfony/orm-pack": "^1.0"
     },
     "require-dev": {
@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "crayner\\doctrine\\": "/"
+            "Crayner\\Doctrine\\": "/"
         },
         "exclude-from-classmap": [
             "/tests/"
@@ -36,7 +36,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "crayner\\doctrine\\Tests\\": "tests/"
+            "Crayner\\Doctrine\\Tests\\": "tests/"
         }
     },
     "scripts": {
