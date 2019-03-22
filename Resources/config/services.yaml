@@ -1,0 +1,6 @@
+services:
+    app.doctrine.subscriber.table_prefix_subscriber:
+        class: crayner\doctrine\TablePrefixSubscriber
+        tags:
+            - { name: doctrine.event_subscriber }
+
