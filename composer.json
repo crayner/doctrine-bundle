@@ -18,7 +18,10 @@
         "symfony/orm-pack": "^1.0"
     },
     "require-dev": {
-        "symfony/flex": "^1.2"
+        "dama/doctrine-test-bundle": "^5.0",
+        "symfony/flex": "^1.2",
+        "symfony/test-pack": "^1.0",
+        "symfony/yaml": "^4.2"
     },
     "config": {
         "preferred-install": {

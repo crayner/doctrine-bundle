@@ -1,0 +1,5 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
+    <entity name="Crayner\Doctrine\tests\Entity\TestTable" table="test_table">
+        <field name="testField" column="test_field" />
+    </entity>
+</doctrine-mapping>

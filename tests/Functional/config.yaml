@@ -1,0 +1,32 @@
+doctrine:
+    dbal:
+        connections:
+            default:
+                driver:   pdo_mysql
+                charset:  utf8mb4
+                server_version: 5.7
+                host:     localhost
+                dbname:   doctrine_test
+                user:     root
+                password: ~
+                options:
+                    prefix: craig_
+    orm:
+        auto_generate_proxy_classes: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+        mappings:
+            Tests:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/tests/Entity'
+                alias: Crayner\Doctrine\tests\Entity
+                prefix: Tests
+
+dama_doctrine_test:
+    enable_static_connection: true
+    enable_static_meta_data_cache: true
+    enable_static_query_cache: true
+
+parameters:
+    kernel.secret: lkfh93478653hf5y547v462346
