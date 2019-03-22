@@ -7,4 +7,14 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
+composer.lock
+symfony.lock
+phpunit.xml.dist
+/bin/
+/config/
+.env*.*
 
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
