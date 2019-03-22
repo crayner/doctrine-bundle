@@ -9,7 +9,7 @@
  * Date: 23/11/2018
  * Time: 11:17
  */
-namespace crayner\doctrine\Listener;
+namespace Crayner\Doctrine\Listener;
 
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
