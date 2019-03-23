@@ -1,7 +1,7 @@
 # Doctrine Bundle Project
 ### Doctrine Bundle Project - Symfony 4+
 
-___Version 0.0.10___
+___Version 0.0.11___
 
 This project has not yet implemented a flex recipe.
 

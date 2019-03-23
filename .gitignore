@@ -12,7 +12,7 @@ symfony.lock
 phpunit.xml.dist
 /bin/
 /config/
-.env*.*
+/public/
 
 ###> symfony/phpunit-bridge ###
 .phpunit
