@@ -3,8 +3,6 @@
 
 ___Version 1.0.00___
 
-This project has not yet implemented a flex recipe.
-
 ## Features
 * [Add a prefix to all tables within a connection.](Documents/TablePrefix.md)
 
