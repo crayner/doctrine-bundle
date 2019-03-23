@@ -5,7 +5,6 @@
     "keywords": [
         "doctrine"
     ],
-    "homepage": "http://www.craigrayner.com",
     "license": "MIT",
     "authors": [
         {
@@ -37,12 +36,6 @@
     "autoload-dev": {
         "psr-4": {
             "Crayner\\Doctrine\\Tests\\": "tests/"
-        }
-    },
-    "scripts": {
-        "auto-scripts": {
-            "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
     }
 }

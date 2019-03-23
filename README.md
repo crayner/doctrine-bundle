@@ -35,4 +35,4 @@ return [
 ];
 ```
 
-Licence: [MIT](LICENCE.md)
+[MIT License](LICENSE.md)
