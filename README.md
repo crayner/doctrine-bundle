@@ -1,7 +1,7 @@
 # Doctrine Bundle Project
 ### Doctrine Bundle Project - Symfony 4+
 
-___Version 1.0.00___
+___Version 1.0.01___
 
 ## Features
 * [Add a prefix to all tables within a connection.](Documents/TablePrefix.md)
