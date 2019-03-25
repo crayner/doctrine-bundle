@@ -16,7 +16,7 @@ use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 
 /**
  * Class TablePrefixSubscriber
- * @package crayner\doctrine\Listener
+ * @package Crayner\Doctrine\Listener
  */
 class TablePrefixSubscriber implements EventSubscriber
 {
@@ -34,9 +34,8 @@ class TablePrefixSubscriber implements EventSubscriber
     public function loadClassMetadata(LoadClassMetadataEventArgs $eventArgs)
     {
         $params = $eventArgs->getEntityManager()->getConnection()->getParams();
-        $prefix = empty($params['driverOptions']['prefix']) ? '' : $params['driverOptions']['prefix'];
+        $prefix = empty($params['driverOptions']['prefix']) ? $this->getPrefix() : $params['driverOptions']['prefix'];
         if (empty($prefix)) return;
-
         $prefix = mb_substr(preg_replace('/\s/', '', $prefix), 0, 7);
         if (empty($prefix)) return;
 
@@ -52,5 +51,28 @@ class TablePrefixSubscriber implements EventSubscriber
             if ($mapping['type'] == \Doctrine\ORM\Mapping\ClassMetadataInfo::MANY_TO_MANY && $mapping['isOwningSide'])
                 if (strpos($mapping['joinTable']['name'], $prefix) !== 0)
                     $classMetadata->associationMappings[$fieldName]['joinTable']['name'] = $prefix . $mapping['joinTable']['name'];
+    }
+
+    /**
+     * @var string|null
+     */
+    private $prefix;
+
+    /**
+     * @return string|null
+     */
+    public function getPrefix(): string
+    {
+        return $this->prefix ?: '';
+    }
+
+    /**
+     * @param string|null $prefix
+     * @return TablePrefixSubscriber
+     */
+    public function setPrefix(?string $prefix): TablePrefixSubscriber
+    {
+        $this->prefix = $prefix;
+        return $this;
     }
 }

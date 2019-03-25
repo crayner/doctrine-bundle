@@ -11,6 +11,7 @@
  */
 namespace Crayner\Doctrine\DependencyInjection;
 
+use Crayner\Doctrine\Listener\TablePrefixSubscriber;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -24,12 +25,22 @@ class CraynerDoctrineExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
+        $configuration = $this->getConfiguration($configs, $container);
+        $config        = $this->processConfiguration($configuration, $configs);
+
         $locator = new FileLocator(__DIR__ . '/../Resources/config');
         $loader  = new YamlFileLoader(
             $container,
             $locator
         );
         $loader->load('services.yaml');
+
+        if (!empty($config['prefix']) && $container->has(TablePrefixSubscriber::class))
+        {
+            $container
+                ->getDefinition(TablePrefixSubscriber::class)
+                ->addMethodCall('setPrefix', [$config['prefix']]);
+        }
     }
 
 }
