@@ -4,13 +4,13 @@
 ### Usage
 This project adds a prefix to all tables names within doctrine or per connection.
 * In the __config/packages/crayner_doctrine.yaml__ file set the prefix option.
-```
+```yaml
 crayner_doctrine:
     prefix: jhg6_
 ```
 * In your __config/packages/doctrine.yaml__ definition, add the prefix under the options of the connection. This option has a higher priority that the prefix set in the bundle configuration.
 
-```
+```yaml
 doctrine:
     dbal:
         default_connection: default

@@ -1,7 +1,7 @@
 # Doctrine Bundle Project
 ### Doctrine Bundle Project - Symfony 4+
 
-___Version 1.0.01___
+___Version 1.0.02___
 
 ## Features
 * [Add a prefix to all tables within a connection.](Documents/TablePrefix.md)
@@ -24,7 +24,7 @@ _This command requires you to have Composer installed globally, as explained in 
 __Step 2: Enable the Bundle__
 
 Then, enable the bundle by adding it to the list of registered bundles in the config/Bundles.php file of your project:
-```
+```php
 <?php
 return [
     //...
