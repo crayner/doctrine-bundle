@@ -14,10 +14,12 @@
     ],
     "require": {
         "php": "^7.2",
-        "symfony/orm-pack": "^1.0"
+        "doctrine/orm": "*",
+        "doctrine/doctrine-bundle": "*",
+        "doctrine/doctrine-migrations-bundle": "*"
     },
     "require-dev": {
-        "symfony/flex": "^1.2"
+        "symfony/flex": "*"
     },
     "config": {
         "preferred-install": {
