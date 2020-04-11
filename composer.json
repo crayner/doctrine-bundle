@@ -14,9 +14,8 @@
     ],
     "require": {
         "php": "^7.2",
-        "doctrine/orm": "*",
-        "doctrine/doctrine-bundle": "*",
-        "doctrine/doctrine-migrations-bundle": "*"
+        "doctrine/orm": "^2.7",
+        "doctrine/doctrine-bundle": "^2.0",
     },
     "require-dev": {
         "symfony/flex": "*"
