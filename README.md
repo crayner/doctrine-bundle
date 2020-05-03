@@ -1,7 +1,7 @@
 # Doctrine Bundle Project
 ### Doctrine Bundle Project - Symfony 4+
 
-___Version 1.0.06___
+___Version 1.0.07___
 
 ## Features
 * [Add a prefix to all tables within a connection.](Documents/TablePrefix.md)
@@ -32,5 +32,7 @@ return [
     Crayner\Doctrine\CraynerDoctrineBundle::class => ['all' => true],
 ];
 ```
+__To Do (Limitations)__
+* The prefix is not yet effective when using the migration bundle.
 
 [MIT License](LICENSE.md)

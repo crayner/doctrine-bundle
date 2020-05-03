@@ -40,4 +40,7 @@ The prefix, regardless of where it is set,  is limited to 7 characters maximum a
 
 Each connection will then prefix (maximum 7 characters) every table that meets the connection settings.  In this case **'jhg6_'** will be added to all tables names in the default connection, and __'oauth2'__ will be added to tables identified by the oauth connection.  The listener will add the prefix whenever the table is actioned via doctrine.
 
+__Limitation__
+* The prefix is not available in the Migration Bundles.
+
 [Return Home](../README.md)
