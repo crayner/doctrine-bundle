@@ -23,6 +23,8 @@ doctrine:
                 default_table_options:
                     charset: utf8mb4
                     collate: utf8mb4_unicode_ci
+                options:
+                    prefix: 'jhg6_'
                 url: '%env(resolve:DATABASE_URL)%'
             oauth:
                 driver: 'pdo_mysql'
@@ -32,7 +34,7 @@ doctrine:
                     charset: utf8mb4
                     collate: utf8mb4_unicode_ci
                 options:
-                    prefix: 'oauth2'
+                    prefix: 'aoauth2'
                 url: '%env(resolve:DATABASE_URL2)%'
 
 ```
