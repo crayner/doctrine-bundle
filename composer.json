@@ -1,7 +1,7 @@
 {
     "name": "crayner/doctrine-bundle",
     "type": "symfony-bundle",
-    "description": "Doctrine Bundle for Symfony 4+",
+    "description": "Doctrine Bundle for Symfony 5+",
     "keywords": [
         "doctrine"
     ],
@@ -13,10 +13,15 @@
         }
     ],
     "require": {
-        "php": "^7.2",
-        "symfony/orm-pack": "^2"
+        "php": "^8.0",
+        "composer/package-versions-deprecated": "1.11.99.4",
+        "doctrine/doctrine-bundle": "^2.4",
+        "doctrine/doctrine-migrations-bundle": "^3.2",
+        "doctrine/orm": "^2.10",
+        "symfony/proxy-manager-bridge": "^5.3"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "symfony/flex": "*"
     },
     "config": {
@@ -36,6 +41,12 @@
     "autoload-dev": {
         "psr-4": {
             "Crayner\\Doctrine\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
     }
 }

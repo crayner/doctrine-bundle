@@ -4,7 +4,7 @@
 ___Version 1.0.10___
 
 ## Features
-* [Add a prefix to all tables within a connection.](Documents/TablePrefix.md)
+* [Add a prefix to all tables within a connection.](docs/TablePrefix.md)
 
 ## Installation
 #### Applications that use Symfony Flex
